@@ -1,0 +1,27 @@
+{
+  "name": "ab_testing_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fatih Gozenc",
+  "license": "MIT",
+  "scripts": {
+    "test": "tsc && jest --verbose",
+    "dev:style": "concurrently \"tsc -w\" \"lite-server\" ",
+    "dev:freq": "concurrently \"nodemon ./dist/getFrequencyTypeSegment.js\" \"tsc -w\" "
+  },
+  "devDependencies": {
+    "@types/expect-puppeteer": "^4.4.5",
+    "@types/jest": "^26.0.16",
+    "@types/jest-environment-puppeteer": "^4.4.0",
+    "@types/puppeteer": "^5.4.1",
+    "concurrently": "^5.3.0",
+    "jest": "^26.6.3",
+    "jest-puppeteer": "^4.4.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "puppeteer": "^5.5.0",
+    "ts-jest": "^26.4.4",
+    "tsc": "^1.20150623.0",
+    "typescript": "^4.1.2"
+  }
+}

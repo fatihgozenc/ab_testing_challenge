@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Development</title>
+  <script>
+    window.cX = {
+      persistedQueryIdValue: "abcdef",
+      getUserSegmentIds: () => {
+        return window.Kameleoon = {
+            API: {
+              CurrentVisit: {
+                customData: {
+                  Piano: [
+                    "lowfrequencyUser"
+                  ]
+                }
+              }
+            }
+          }
+      }
+    }
+    window.Kameleoon = {
+      API: {
+        CurrentVisit: {
+          customData: {
+            Piano: [
+              "lowfrequencyUser",
+              "mediumfrequencyUser",
+              "highfrequencyUser",
+              "iOSUser",
+              "androidUser",
+              "windowsUsers"
+            ]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <script src="dist/addCustomStyle.js"></script>
+  <script>
+    const styler = new Styler()
+    styler.addCustomStyle(
+        'testId', 
+        'body',`{
+          background-color: rgb(255, 0, 0); 
+          margin: 20px; 
+          display: flex;
+        }`)
+  </script>
+</body>
+</html>
